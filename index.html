@@ -43,31 +43,34 @@
             body {
                 display: flex;
                 flex-direction: column;
+                flex-wrap: nowrap;
             }
             #header {
                 height: 100px;
                 width: 90vw;
-                order: 1;
+                order: -1;
             }
             #nav {
                 height: 100px;
                 width: 90vw;
-                order: 2;
+                order: 1;
             }
             #article {
                 height: 100px;
                 width: 90vw;
-                order: 3;
             }
             #aside {
                 height: 100px;
+                width: 90vw;
+            }
+            #ezegyhatalmasfajdalom{
                 width: 90vw;
                 order: 4;
             }
             #footer {
                 height: 100px;
                 width: 90vw;
-                order: 5;
+                order: 3;
             }
         }
         @media (min-width: 501px) {
@@ -97,7 +100,7 @@
             display: inline-flex;
             height: 90vh;
         }
-        #ezegyhatalamasfajdalom{
+        #ezegyhatalmasfajdalom{
             width: 100%;
             display: inline-flex;
         }
@@ -105,15 +108,14 @@
     </style>
 </head>
 <body>
-        <div id="nav"><nav>Nav</nav></div>
-        <div id="ezegyfajdalom">
-            <div id="eznmegegyfajdalom">
-                <div id="header"><header>Header</header></div>
-                    <div id="ezegyhatalamasfajdalom">
-                        <div id="article"><article>Article</article></div>
-                        <div id="aside"><aside>Aside</aside></div>
+    <div id="nav"><nav>Nav</nav></div>
+        <div id="eznmegegyfajdalom">
+             <div id="header"><header>Header</header></div>
+                <div id="ezegyhatalmasfajdalom">
+                    <div id="article"><article>Article</article></div>
+                    <div id="aside"><aside>Aside</aside></div>
                     </div>
-                <div id="footer"><footer>Footer</footer></div>
-            </div>
+            <div id="footer"><footer>Footer</footer></div>
         </div>
+    </div>
 </body>
