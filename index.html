@@ -10,31 +10,26 @@
             display: flex;
         }
         #header {
-            color: red;
             border: 1px black solid;
             padding: 3px;
             text-align: center;
         }
         #nav {
-            color: orange;
             border: 1px black solid;
             padding: 3px;
             text-align: center;
         }
         #article {
-            color: yellow;
             border: 1px black solid;
             padding: 3px;
             text-align: center;
         }
         #aside {
-            color: green;
             border: 1px black solid;
             padding: 3px;
             text-align: center;
         }
         #footer {
-            color: blue;
             border: 1px black solid;
             padding: 3px;
             text-align: center;
@@ -43,7 +38,7 @@
             body {
                 display: flex;
                 flex-direction: column;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
             }
             #header {
                 height: 100px;
@@ -70,52 +65,109 @@
             #footer {
                 height: 100px;
                 width: 90vw;
-                order: 3;
+                order: 5;
             }
+        #navflex{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #nav1flex{
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #nav2flex{
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            
         }
         @media (min-width: 501px) {
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 100vh;
+        }
         #header {
                 height: 20vh;
                 width: 80vw;
         }
         #nav {
-            float: left;
-            width: 20vw;
+            height: 92vh;
+            width: 15vw;
         }
         #article {
             height: 50vh;
-            width: 75%;
-            
+            width: 60vw;
         }
         #aside {
             height: 50vh;
-            width: 18.9vw;
+            width: 21vw;
         }
         #footer {
             height: 20vh;
             width: 80vw;
         }
-        #ezmegegyfajdalom > div{
-            width: 90vw;
-            display: inline-flex;
-            height: 90vh;
-        }
         #ezegyhatalmasfajdalom{
-            width: 100%;
+            width: 80.5vw;
             display: inline-flex;
+        }
+        #navflex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 100%;
+            justify-content: space-around;
+        }
+        #nav1flex{
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 2vh;
+            width: 16vw;
+        }
+        #nav2flex{
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 2vh;
+            justify-content: space-evenly;
+            width: 24vw;
         }
         }
     </style>
 </head>
 <body>
-    <div id="nav"><nav>Nav</nav></div>
-        <div id="eznmegegyfajdalom">
-             <div id="header"><header>Header</header></div>
-                <div id="ezegyhatalmasfajdalom">
-                    <div id="article"><article>Article</article></div>
-                    <div id="aside"><aside>Aside</aside></div>
+    <div id="nav">
+        <nav>Nav</nav>
+    </div>
+        <div id="header">
+                <div id="navflex">
+                    <div id="nav1flex">
+                        <img src="favicon-32x32.png" title="ikon">
+                        <p>Fő oldal</p>
                     </div>
-            <div id="footer"><footer>Footer</footer></div>
+                    <div id="nav2flex">
+                        <p>Menüpont1</p>
+                        <p>Menüpont2</p>
+                        <p>Menüpont3</p>
+                    </div>
+                </div>
         </div>
+            <div id="ezegyhatalmasfajdalom">
+                <div id="article"><article>Article</article></div>
+                <div id="aside"><aside>Aside</aside></div>
+                </div>
+        <div id="footer"><footer>Footer</footer></div>
     </div>
 </body>
