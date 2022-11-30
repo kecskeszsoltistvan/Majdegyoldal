@@ -46,8 +46,8 @@
                 order: -1;
             }
             #nav {
-                height: 100px;
                 width: 90vw;
+                height: auto;
                 order: 1;
             }
             #article {
@@ -73,7 +73,7 @@
             flex-wrap: wrap;
         }
         #nav1flex{
-            font-size: 12px;
+            font-size: 20px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -100,6 +100,9 @@
         #nav {
             height: 92vh;
             width: 15vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
         #article {
             height: 50vh;
@@ -108,6 +111,9 @@
         #aside {
             height: 50vh;
             width: 21vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
         #footer {
             height: 20vh;
@@ -126,13 +132,13 @@
             justify-content: space-around;
         }
         #nav1flex{
-            font-size: 12px;
+            font-size: 24px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             height: 2vh;
-            width: 16vw;
+            width: 50px;
         }
         #nav2flex{
             font-size: 12px;
@@ -142,20 +148,21 @@
             align-items: center;
             height: 2vh;
             justify-content: space-evenly;
-            width: 24vw;
+            width: 300px;
         }
         }
     </style>
 </head>
 <body>
     <div id="nav">
-        <nav>Nav</nav>
+        <span>Mindenki szereti a kenyereket. Legyen az fehér, fekete, vagy akár darálthússal egybesütött. Ezért is szól ez az oldal kenyerekről. Meg azért is, mert nincs jobb dolgom és üres a fejem.</span>
+        <span><br>Az oldalt összeállította: Kecskés Zsolt István</span>
     </div>
         <div id="header">
                 <div id="navflex">
                     <div id="nav1flex">
                         <img src="favicon-32x32.png" title="ikon">
-                        <p>Fő oldal</p>
+                        <p>enyér</p>
                     </div>
                     <div id="nav2flex">
                         <p>Menüpont1</p>
@@ -166,7 +173,10 @@
         </div>
             <div id="ezegyhatalmasfajdalom">
                 <div id="article"><article>Article</article></div>
-                <div id="aside"><aside>Aside</aside></div>
+                <div id="aside">
+                   <span>KEDVENC KENYEREM:</span>
+                   <span><br>Az én személy szerinti kedvenc bolti kenyerem a "Bükki paraszt kenyér". A kenyér kellemes kb 2-3cm vastag szeletekre van vágva. Átlagosan van 15-20 szeletre van osztva csomagonként, elég, hogy az a 2-3 nap alatt elfogyjon, mielött elkezdené a penészedést. Emellett a kenyér héja sem keményül annyira meg, így az idősebbek, vagy azok, akik elvesztették a fogaikat is ehetik. Ebbe tartozik bele a 3 gyerek a pincémben. A béle puha, könnyen fel tud szívni bármilyen ételnek a levét, amit szeretne. Legyen az pörkölt, gulyás, halászlé stb.</span>
+                </div>
                 </div>
         <div id="footer"><footer>Footer</footer></div>
     </div>
