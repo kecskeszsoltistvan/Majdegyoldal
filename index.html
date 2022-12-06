@@ -22,17 +22,28 @@
         #article {
             border: 1px black solid;
             padding: 3px;
-            text-align: center;
+            text-align: justify;
+            display: inline-block
         }
         #aside {
             border: 1px black solid;
             padding: 3px;
             text-align: center;
+            overflow: auto;
         }
         #footer {
             border: 1px black solid;
             padding: 3px;
             text-align: center;
+        }
+        #Hozzavalo{
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+        }
+        #lepesek{
+            overflow: auto;
+            margin-bottom: 20px;
         }
         @media (max-width: 500px) {
             body {
@@ -41,7 +52,7 @@
                 flex-wrap: wrap;
             }
             #header {
-                height: 100px;
+                height: auto;
                 width: 90vw;
                 order: -1;
             }
@@ -51,11 +62,11 @@
                 order: 1;
             }
             #article {
-                height: 100px;
+                height: auto;
                 width: 90vw;
             }
             #aside {
-                height: 100px;
+                height: auto;
                 width: 90vw;
             }
             #ezegyhatalmasfajdalom{
@@ -63,7 +74,7 @@
                 order: 4;
             }
             #footer {
-                height: 100px;
+                height: auto;
                 width: 90vw;
                 order: 5;
             }
@@ -77,6 +88,12 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: center;
+        }
+        #kkep{
+            height: 32px;
+            width: 32px;
+
         }
         #nav2flex{
             font-size: 12px;
@@ -105,18 +122,18 @@
             justify-content: space-evenly;
         }
         #article {
-            height: 50vh;
+            height: 60.3vh;
             width: 60vw;
         }
         #aside {
-            height: 50vh;
+            height: 60.3vh;
             width: 21vw;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
         }
         #footer {
-            height: 20vh;
+            height: 10vh;
             width: 80vw;
         }
         #ezegyhatalmasfajdalom{
@@ -161,7 +178,7 @@
         <div id="header">
                 <div id="navflex">
                     <div id="nav1flex">
-                        <img src="favicon-32x32.png" title="ikon">
+                        <img src="favicon-32x32.png" title="K" alt="K" id="kkep">
                         <p>enyér</p>
                     </div>
                     <div id="nav2flex">
@@ -172,7 +189,28 @@
                 </div>
         </div>
             <div id="ezegyhatalmasfajdalom">
-                <div id="article"><article>Article</article></div>
+                <div id="article">
+                    <h2 style="width: 170px; margin: 10px 10px;">Kenyér készítés</h2>
+                    <div id="Hozzavalo">
+                        <p>Hozzávalók:</p>
+                        <ul>
+                            <li>500g Liszt</li>
+                            <li>Fél kocka friss instant élesztő</li>
+                            <li>2dl víz</li>
+                            <li>2 evőkanál napraforgó olaj</li>
+                            <li>fél teáskanál cukor</li>
+                            <li>1 tk só</li>
+                        </ul>
+                    </div>
+                    <div id="lepesek">
+                        <or>
+                            <li>A lisztet tálba szitáljuk. A közepére mélyedést formázunk, beleöntünk kevés vizet, beleszórjuk / morzsoljuk az élesztőt, meghintjük egy kis cukorral, majd 10-15 percet letakarva állni hagyjuk. (Ha szárított élesztőt használunk, kicsit tovább.)</li>
+                            <li>A hozzávalókat összegyúrjuk, 10 percigdagasztjuk, hogy egy lágy, jól gyúrható tésztát kapjunk. (A vizet fokozatosan adagoljuk, attól függően, hogy a tészta mennyit vesz fel.)</li>
+                            <li>Ha kész, tegyük kenyérsütő formába, kenjük meg vízzel a tetejét, és tegyük előre belangyosított sütőbe. Épp csak kézmeleg legyen a levegő és hagyjuk ott, amíg kétszeresére nem kel (kb. 60 perc).</li>
+                            <li>Tekerjük fel a hőfokot 220 fokra, tegyünk mellé egy edényben vizet és kb fél óra alatt süssük aranybarnára.</li>
+                        </or>
+                    </div>
+                </div>
                 <div id="aside">
                    <span>KEDVENC KENYEREM:</span>
                    <span><br>Az én személy szerinti kedvenc bolti kenyerem a "Bükki paraszt kenyér". A kenyér kellemes kb 2-3cm vastag szeletekre van vágva. Átlagosan van 15-20 szeletre van osztva csomagonként, elég, hogy az a 2-3 nap alatt elfogyjon, mielött elkezdené a penészedést. Emellett a kenyér héja sem keményül annyira meg, így az idősebbek, vagy azok, akik elvesztették a fogaikat is ehetik. Ebbe tartozik bele a 3 gyerek a pincémben. A béle puha, könnyen fel tud szívni bármilyen ételnek a levét, amit szeretne. Legyen az pörkölt, gulyás, halászlé stb.</span>
